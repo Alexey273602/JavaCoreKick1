@@ -1,0 +1,14 @@
+17:51:42.804 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 10
+17:51:42.808 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 10
+17:51:53.203 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 4
+17:51:53.207 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+17:51:53.208 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 4
+17:51:53.208 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+17:51:53.209 [main] INFO  by.kozhevnikov.task1.service.impl.SortServiceImpl - Начало быстрой сортировки массива, длина=4
+17:51:53.209 [main] INFO  by.kozhevnikov.task1.service.impl.SortServiceImpl - Быстрая сортировка завершена: [1, 2, 3, 4]
+17:51:53.209 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 4
+17:51:53.209 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+17:51:53.209 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 4
+17:51:53.212 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+17:51:53.212 [main] INFO  by.kozhevnikov.task1.service.impl.SortServiceImpl - Начало сортировки вставками массива, длина=4
+17:51:53.212 [main] INFO  by.kozhevnikov.task1.service.impl.SortServiceImpl - Сортировка вставками завершена: [1, 2, 3, 4]
