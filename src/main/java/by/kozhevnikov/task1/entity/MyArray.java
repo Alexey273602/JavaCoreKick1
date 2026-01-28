@@ -10,15 +10,31 @@ public class MyArray {
   private static final Logger logger =
           LoggerFactory.getLogger(MyArray.class);
 
+  private int id;
+
+  private static int idCounter = 0;
+
+  private Warehouse warehouse;
+
   private final int[] data;
 
   public MyArray(int[] data) {
+    this.id = idCounter++;
     this.data = data;
+    this.warehouse = new Warehouse(this);
     logger.info("MyArray создан, размер массива = {}", data.length);
   }
 
-  public int[] get() {
+  public int[] getData() {
     return data.clone();
+  }
+
+  public Warehouse getWarehouse() {
+    return warehouse;
+  }
+
+  public int getId() {
+    return id;
   }
 
   @Override

@@ -12,9 +12,9 @@ public class SortServiceImpl implements SortService {
 
   @Override
   public int[] quickSort(MyArray array) {
-    int[] data = array.get();
+    int[] data = array.getData();
     logger.info("Начало быстрой сортировки массива, длина={}", data.length);
-
+    
     quickSortRecursive(data, 0, data.length - 1);
 
     logger.info("Быстрая сортировка завершена: {}", java.util.Arrays.toString(data));
@@ -54,7 +54,7 @@ public class SortServiceImpl implements SortService {
 
   @Override
   public int[] insertSort(MyArray array) {
-    int[] data = array.get();
+    int[] data = array.getData();
     logger.info("Начало сортировки вставками массива, длина={}", data.length);
 
     for (int i = 1; i < data.length; i++) {

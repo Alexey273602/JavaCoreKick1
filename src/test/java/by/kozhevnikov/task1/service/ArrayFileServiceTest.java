@@ -1,12 +1,12 @@
 package by.kozhevnikov.task1.service;
 
 import by.kozhevnikov.task1.entity.MyArray;
+import by.kozhevnikov.task1.exception.ArrayException;
 import by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl;
 import by.kozhevnikov.task1.reader.FileArrayReader;
 import by.kozhevnikov.task1.validator.ArrayLineValidator;
 import org.junit.Test;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +18,7 @@ public class ArrayFileServiceTest {
   private final ArrayLineValidator validator = new ArrayLineValidator();
 
   @Test
-  public void testCreateArrayFromFile() throws IOException {
+  public void testCreateArrayFromFile() throws ArrayException {
     String filePath = "src/test/resources/test-array.txt";
 
     List<String> lines = reader.readLines(filePath);
@@ -38,6 +38,6 @@ public class ArrayFileServiceTest {
 
     MyArray array = ArrayFactoryImpl.createArray(arrayData);
 
-    assertArrayEquals(expected, array.get());
+    assertArrayEquals(expected, array.getData());
   }
 }

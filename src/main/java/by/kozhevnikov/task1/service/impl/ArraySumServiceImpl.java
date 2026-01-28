@@ -13,7 +13,7 @@ public class ArraySumServiceImpl implements ArrayService {
   @Override
   public int calculate(MyArray array) {
     int sum = 0;
-    int[] elements = array.get();
+    int[] elements = array.getData();
 
     for (int element : elements) {
       sum += element;

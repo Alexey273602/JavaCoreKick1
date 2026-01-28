@@ -12,7 +12,7 @@ public class ArrayMinMaxServiceImpl implements ArrayMinMaxService {
 
   @Override
   public int min(MyArray array) {
-    int[] elements = array.get();
+    int[] elements = array.getData();
     int min = elements[0];
 
     for (int element : elements) {
@@ -27,7 +27,7 @@ public class ArrayMinMaxServiceImpl implements ArrayMinMaxService {
 
   @Override
   public int max(MyArray array) {
-    int[] elements = array.get();
+    int[] elements = array.getData();
     int max = elements[0];
 
     for (int element : elements) {
