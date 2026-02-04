@@ -75,4 +75,9 @@ public class MyArrayRepositoryImpl implements MyArrayRepository {
 
     warehouse.update(array);
   }
+
+  @Override
+  public void clear(){
+    storage.clear();
+  }
 }

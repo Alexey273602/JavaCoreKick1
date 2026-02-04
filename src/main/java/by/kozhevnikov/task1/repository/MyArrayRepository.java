@@ -14,6 +14,8 @@ public interface MyArrayRepository {
 
   MyArray get(int id);
 
+  void updateElement(int arrayId, int index, int newValue);
+
   void sortById();
 
   void sortByMax();
@@ -24,5 +26,5 @@ public interface MyArrayRepository {
 
   void sortBySize();
 
-
+  void clear();
 }
