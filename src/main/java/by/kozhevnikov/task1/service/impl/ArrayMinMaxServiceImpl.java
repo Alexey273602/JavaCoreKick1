@@ -34,6 +34,7 @@ public class ArrayMinMaxServiceImpl implements ArrayMinMaxService {
       if (element > max) {
         max = element;
       }
+
     }
 
     logger.debug("Максимальное значение массива = {}", max);

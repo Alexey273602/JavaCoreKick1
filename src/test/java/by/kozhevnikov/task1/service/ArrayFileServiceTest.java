@@ -3,8 +3,8 @@ package by.kozhevnikov.task1.service;
 import by.kozhevnikov.task1.entity.MyArray;
 import by.kozhevnikov.task1.exception.ArrayException;
 import by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl;
-import by.kozhevnikov.task1.reader.FileArrayReader;
-import by.kozhevnikov.task1.validator.ArrayLineValidator;
+import by.kozhevnikov.task1.reader.impl.FileArrayReaderImpl;
+import by.kozhevnikov.task1.validator.impl.ArrayLineValidatorImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -14,8 +14,8 @@ import static org.junit.Assert.assertArrayEquals;
 
 public class ArrayFileServiceTest {
 
-  private final FileArrayReader reader = new FileArrayReader();
-  private final ArrayLineValidator validator = new ArrayLineValidator();
+  private final FileArrayReaderImpl reader = new FileArrayReaderImpl();
+  private final ArrayLineValidatorImpl validator = new ArrayLineValidatorImpl();
 
   @Test
   public void testCreateArrayFromFile() throws ArrayException {

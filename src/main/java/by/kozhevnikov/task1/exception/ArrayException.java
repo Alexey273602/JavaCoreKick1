@@ -6,4 +6,8 @@ public class ArrayException extends Exception {
     super(message);
   }
 
+  public ArrayException(String message, Exception e) {
+    super(message, e);
+  }
+
 }

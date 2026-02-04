@@ -21,5 +21,7 @@ public class ArraySumServiceImpl implements ArrayService {
 
     logger.debug("Сумма элементов массива = {}", sum);
     return sum;
+
+
   }
 }
