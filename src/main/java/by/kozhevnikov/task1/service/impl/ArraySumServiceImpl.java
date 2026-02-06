@@ -1,6 +1,6 @@
 package by.kozhevnikov.task1.service.impl;
 
-import by.kozhevnikov.task1.entity.MyArray;
+import by.kozhevnikov.task1.entity.CustomArray;
 import by.kozhevnikov.task1.service.ArrayService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +11,7 @@ public class ArraySumServiceImpl implements ArrayService {
           LoggerFactory.getLogger(ArraySumServiceImpl.class);
 
   @Override
-  public int calculate(MyArray array) {
+  public int calculate(CustomArray array) {
     int sum = 0;
     int[] elements = array.getData();
 

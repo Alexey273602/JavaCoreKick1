@@ -1,6 +1,6 @@
 package by.kozhevnikov.task1.service.impl;
 
-import by.kozhevnikov.task1.entity.MyArray;
+import by.kozhevnikov.task1.entity.CustomArray;
 import by.kozhevnikov.task1.service.SortService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +11,7 @@ public class SortServiceImpl implements SortService {
           LoggerFactory.getLogger(SortServiceImpl.class);
 
   @Override
-  public int[] quickSort(MyArray array) {
+  public int[] quickSort(CustomArray array) {
     int[] data = array.getData();
     logger.info("Начало быстрой сортировки массива, длина={}", data.length);
     
@@ -53,7 +53,7 @@ public class SortServiceImpl implements SortService {
   }
 
   @Override
-  public int[] insertSort(MyArray array) {
+  public int[] insertSort(CustomArray array) {
     int[] data = array.getData();
     logger.info("Начало сортировки вставками массива, длина={}", data.length);
 

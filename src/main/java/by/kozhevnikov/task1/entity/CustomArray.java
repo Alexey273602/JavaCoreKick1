@@ -5,10 +5,10 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
 
-public class MyArray {
+public class CustomArray {
 
   private static final Logger logger =
-          LoggerFactory.getLogger(MyArray.class);
+          LoggerFactory.getLogger(CustomArray.class);
 
   private int id;
 
@@ -16,10 +16,10 @@ public class MyArray {
 
   private final int[] data;
 
-  public MyArray(int[] data) {
+  public CustomArray(int[] data) {
     this.id = idCounter++;
     this.data = data;
-    logger.info("MyArray создан, размер массива = {}", data.length);
+    logger.info("CustomArray создан, размер массива = {}", data.length);
   }
 
   public int[] getData() {
@@ -41,8 +41,8 @@ public class MyArray {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
 
-    MyArray myArray = (MyArray) o;
-    return Arrays.equals(data, myArray.data);
+    CustomArray CustomArray = (CustomArray) o;
+    return Arrays.equals(data, CustomArray.data);
   }
 
   @Override
@@ -52,7 +52,7 @@ public class MyArray {
 
   @Override
   public String toString() {
-    final StringBuffer sb = new StringBuffer("MyArray{");
+    final StringBuffer sb = new StringBuffer("CustomArray{");
     sb.append("data=");
     if (data == null) sb.append("null");
     else {

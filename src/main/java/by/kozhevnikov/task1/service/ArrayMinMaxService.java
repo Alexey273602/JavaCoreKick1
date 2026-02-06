@@ -1,10 +1,10 @@
 package by.kozhevnikov.task1.service;
 
-import by.kozhevnikov.task1.entity.MyArray;
+import by.kozhevnikov.task1.entity.CustomArray;
 
 public interface ArrayMinMaxService {
 
-  int min(MyArray array);
+  int min(CustomArray array);
 
-  int max(MyArray array);
+  int max(CustomArray array);
 }

@@ -1,7 +1,7 @@
 package by.kozhevnikov.task1.warehouse.impl;
 
-import by.kozhevnikov.task1.entity.MyArray;
-import by.kozhevnikov.task1.entity.MyArrayStatistics;
+import by.kozhevnikov.task1.entity.CustomArray;
+import by.kozhevnikov.task1.entity.CustomArrayStatistics;
 import by.kozhevnikov.task1.warehouse.Warehouse;
 
 import java.util.HashMap;
@@ -11,7 +11,7 @@ public class WarehouseImpl implements Warehouse {
 
   private static WarehouseImpl INSTANCE;
 
-  private final Map<Integer, MyArrayStatistics> statisticsMap = new HashMap<>();
+  private final Map<Integer, CustomArrayStatistics> statisticsMap = new HashMap<>();
 
   private WarehouseImpl() {
   }
@@ -23,8 +23,8 @@ public class WarehouseImpl implements Warehouse {
     return INSTANCE;
   }
 
-  public void update(MyArray myArray) {
-    int[] data = myArray.getData();
+  public void update(CustomArray CustomArray) {
+    int[] data = CustomArray.getData();
 
     int sum = 0;
     int min = data[0];
@@ -38,11 +38,11 @@ public class WarehouseImpl implements Warehouse {
 
     double avg = (double) sum / data.length;
 
-    MyArrayStatistics statistics = new MyArrayStatistics(sum, min, max, avg);
-    statisticsMap.put(myArray.getId(), statistics);
+    CustomArrayStatistics statistics = new CustomArrayStatistics(sum, min, max, avg);
+    statisticsMap.put(CustomArray.getId(), statistics);
   }
 
-  public MyArrayStatistics getStatistics(int arrayId) {
+  public CustomArrayStatistics getStatistics(int arrayId) {
     return statisticsMap.get(arrayId);
   }
 }

@@ -1,13 +1,13 @@
 package by.kozhevnikov.task1.entity;
 
-public class MyArrayStatistics {
+public class CustomArrayStatistics {
 
   private int sum;
   private int min;
   private int max;
   private double average;
 
-  public MyArrayStatistics(int sum, int min, int max, double average) {
+  public CustomArrayStatistics(int sum, int min, int max, double average) {
     this.sum = sum;
     this.min = min;
     this.max = max;

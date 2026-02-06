@@ -1,7 +1,7 @@
 package by.kozhevnikov.task1.warehouse;
 
-import by.kozhevnikov.task1.entity.MyArray;
-import by.kozhevnikov.task1.entity.MyArrayStatistics;
+import by.kozhevnikov.task1.entity.CustomArray;
+import by.kozhevnikov.task1.entity.CustomArrayStatistics;
 import by.kozhevnikov.task1.warehouse.impl.WarehouseImpl;
 
 public interface Warehouse {
@@ -9,7 +9,7 @@ public interface Warehouse {
     return null;
   }
 
-  void update(MyArray myArray);
+  void update(CustomArray CustomArray);
 
-  MyArrayStatistics getStatistics(int arrayId);
+  CustomArrayStatistics getStatistics(int arrayId);
 }

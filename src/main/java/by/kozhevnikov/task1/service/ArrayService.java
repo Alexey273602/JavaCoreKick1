@@ -1,10 +1,10 @@
 package by.kozhevnikov.task1.service;
 
 
-import by.kozhevnikov.task1.entity.MyArray;
+import by.kozhevnikov.task1.entity.CustomArray;
 
 public interface ArrayService {
 
-  int calculate(MyArray array);
+  int calculate(CustomArray array);
 
 }

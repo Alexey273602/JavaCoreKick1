@@ -12,3 +12,101 @@
 17:51:53.212 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
 17:51:53.212 [main] INFO  by.kozhevnikov.task1.service.impl.SortServiceImpl - Начало сортировки вставками массива, длина=4
 17:51:53.212 [main] INFO  by.kozhevnikov.task1.service.impl.SortServiceImpl - Сортировка вставками завершена: [1, 2, 3, 4]
+18:51:51.910 [main] INFO  by.kozhevnikov.task1.reader.impl.FileArrayReader - Читается файл: data\input.txt
+18:51:51.914 [main] ERROR by.kozhevnikov.task1.reader.impl.FileArrayReader - Ошибка чтения файла: data\input.txt
+java.nio.file.NoSuchFileException: data\input.txt
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2922)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3412)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3453)
+	at by.kozhevnikov.task1.reader.impl.FileArrayReader.readLines(FileArrayReader.java:21)
+	at by.kozhevnikov.task1.Main.main(Main.java:22)
+18:52:27.184 [main] INFO  by.kozhevnikov.task1.reader.impl.FileArrayReader - Читается файл: by\kozhevnikov\data\input.txt
+18:52:27.184 [main] ERROR by.kozhevnikov.task1.reader.impl.FileArrayReader - Ошибка чтения файла: by\kozhevnikov\data\input.txt
+java.nio.file.NoSuchFileException: by\kozhevnikov\data\input.txt
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2922)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3412)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3453)
+	at by.kozhevnikov.task1.reader.impl.FileArrayReader.readLines(FileArrayReader.java:21)
+	at by.kozhevnikov.task1.Main.main(Main.java:22)
+18:53:58.142 [main] INFO  by.kozhevnikov.task1.reader.impl.FileArrayReader - Читается файл: src\main\resources\input.txt
+18:54:59.905 [main] INFO  by.kozhevnikov.task1.reader.impl.FileArrayReader - Читается файл: src\main\resources\input.txt
+18:55:15.199 [main] INFO  by.kozhevnikov.task1.reader.impl.FileArrayReader - Читается файл: src\main\resources\input.txt
+18:55:15.216 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 4
+18:55:15.247 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+18:55:37.879 [main] INFO  by.kozhevnikov.task1.reader.impl.FileArrayReader - Читается файл: src\main\resources\input.txt
+18:55:37.892 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 4
+18:55:37.892 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+18:55:37.892 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 4
+18:55:37.892 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+18:55:37.892 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 5
+18:55:37.892 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 5
+19:00:45.121 [main] INFO  by.kozhevnikov.task1.reader.impl.FileArrayReader - Читается файл: src\main\resources\input.txt
+19:00:45.128 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 4
+19:00:45.130 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+19:00:45.132 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 4
+19:00:45.133 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+19:00:45.133 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 5
+19:00:45.133 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 5
+19:00:57.924 [main] INFO  by.kozhevnikov.task1.reader.impl.FileArrayReader - Читается файл: src\main\resources\input.txt
+19:00:57.934 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 4
+19:00:57.938 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+19:00:57.939 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 4
+19:00:57.939 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+19:00:57.939 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 5
+19:00:57.940 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 5
+15:10:48.316 [main] INFO  by.kozhevnikov.task1.reader.impl.FileArrayReaderImpl - Читается файл: src\main\resources\input.txt
+15:10:48.346 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 4
+15:10:48.372 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+15:10:48.438 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 4
+15:10:48.438 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+15:10:48.438 [main] INFO  by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl - Создаём MyArray, длина = 5
+15:10:48.439 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 5
+15:18:51.727 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 5
+15:19:53.786 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 5
+15:22:14.878 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 5
+15:22:39.992 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 5
+15:23:53.065 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 5
+15:24:06.111 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 5
+18:16:03.041 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+18:16:21.030 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+18:17:21.148 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 3
+18:17:21.167 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 4
+18:22:23.512 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 1
+18:22:23.514 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 1
+18:22:23.514 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 1
+18:22:23.522 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 2
+18:22:23.522 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 2
+18:22:23.532 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 3
+18:22:23.534 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 3
+18:22:23.538 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 3
+18:27:40.002 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 1
+18:27:40.006 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 1
+18:27:40.006 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 1
+18:27:40.019 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 2
+18:27:40.019 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 2
+18:27:40.022 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 3
+18:27:40.024 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 3
+18:27:40.026 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 3
+18:55:32.666 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 1
+18:55:32.666 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 1
+18:55:32.666 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 1
+18:55:32.666 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 2
+18:55:32.666 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 2
+18:55:32.681 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 3
+18:55:32.681 [main] INFO  by.kozhevnikov.task1.entity.MyArray - MyArray создан, размер массива = 3

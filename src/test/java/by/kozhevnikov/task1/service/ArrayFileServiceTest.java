@@ -1,6 +1,6 @@
 package by.kozhevnikov.task1.service;
 
-import by.kozhevnikov.task1.entity.MyArray;
+import by.kozhevnikov.task1.entity.CustomArray;
 import by.kozhevnikov.task1.exception.ArrayException;
 import by.kozhevnikov.task1.factory.impl.ArrayFactoryImpl;
 import by.kozhevnikov.task1.reader.impl.FileArrayReaderImpl;
@@ -36,7 +36,7 @@ public class ArrayFileServiceTest {
     int[] expected = {1, 2, 3, 4, 5, 6, 7, -1, -2, -3};
     int[] arrayData = numbers.stream().mapToInt(Integer::intValue).toArray();
 
-    MyArray array = ArrayFactoryImpl.createArray(arrayData);
+    CustomArray array = ArrayFactoryImpl.createArray(arrayData);
 
     assertArrayEquals(expected, array.getData());
   }

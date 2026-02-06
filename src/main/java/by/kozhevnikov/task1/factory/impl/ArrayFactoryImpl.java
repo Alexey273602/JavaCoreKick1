@@ -1,6 +1,6 @@
 package by.kozhevnikov.task1.factory.impl;
 
-import by.kozhevnikov.task1.entity.MyArray;
+import by.kozhevnikov.task1.entity.CustomArray;
 import by.kozhevnikov.task1.factory.ArrayFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,9 +12,9 @@ public final class ArrayFactoryImpl implements ArrayFactory {
   private ArrayFactoryImpl() {
   }
 
-  public static MyArray createArray(int[] elements) {
-    logger.info("Создаём MyArray, длина = {}", elements.length);
-    return new MyArray(elements);
+  public static CustomArray createArray(int[] elements) {
+    logger.info("Создаём CustomArray, длина = {}", elements.length);
+    return new CustomArray(elements);
   }
 
 }

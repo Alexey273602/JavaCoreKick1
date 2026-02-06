@@ -1,9 +1,9 @@
 package by.kozhevnikov.task1.factory;
 
-import by.kozhevnikov.task1.entity.MyArray;
+import by.kozhevnikov.task1.entity.CustomArray;
 
 public interface ArrayFactory {
-  public static MyArray createArray(int[] data) {
+  public static CustomArray createArray(int[] data) {
     return null;
   }
 }
