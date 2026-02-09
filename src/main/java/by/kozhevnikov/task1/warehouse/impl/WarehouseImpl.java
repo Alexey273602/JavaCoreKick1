@@ -2,6 +2,7 @@ package by.kozhevnikov.task1.warehouse.impl;
 
 import by.kozhevnikov.task1.entity.CustomArray;
 import by.kozhevnikov.task1.entity.CustomArrayStatistics;
+import by.kozhevnikov.task1.exception.ArrayException;
 import by.kozhevnikov.task1.warehouse.Warehouse;
 
 import java.util.HashMap;
@@ -23,8 +24,13 @@ public class WarehouseImpl implements Warehouse {
     return INSTANCE;
   }
 
-  public void update(CustomArray CustomArray) {
+  public void update(CustomArray CustomArray) throws ArrayException {
+
     int[] data = CustomArray.getData();
+
+    if (data.length == 0) {
+      throw new ArrayException("Array is empty");
+    }
 
     int sum = 0;
     int min = data[0];
@@ -44,5 +50,10 @@ public class WarehouseImpl implements Warehouse {
 
   public CustomArrayStatistics getStatistics(int arrayId) {
     return statisticsMap.get(arrayId);
+  }
+
+  @Override
+  public void clear() {
+    statisticsMap.clear();
   }
 }

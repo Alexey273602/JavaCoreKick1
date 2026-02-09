@@ -2,6 +2,7 @@ package by.kozhevnikov.task1.warehouse.impl;
 
 import by.kozhevnikov.task1.entity.CustomArray;
 import by.kozhevnikov.task1.entity.CustomArrayStatistics;
+import by.kozhevnikov.task1.exception.ArrayException;
 import by.kozhevnikov.task1.repository.impl.CustomArrayRepositoryImpl;
 import by.kozhevnikov.task1.warehouse.Warehouse;
 import org.junit.jupiter.api.Test;
@@ -11,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class WarehouseImplTest {
 
   @Test
-  void testStatisticsAfterAdd() {
+  void testStatisticsAfterAdd() throws ArrayException {
     CustomArrayRepositoryImpl repository =
             CustomArrayRepositoryImpl.getInstance();
     Warehouse warehouse = WarehouseImpl.getInstance();
@@ -31,7 +32,7 @@ class WarehouseImplTest {
   }
 
   @Test
-  void testStatisticsUpdatedAfterChange() {
+  void testStatisticsUpdatedAfterChange() throws ArrayException {
     CustomArrayRepositoryImpl repository =
             CustomArrayRepositoryImpl.getInstance();
     Warehouse warehouse = WarehouseImpl.getInstance();
